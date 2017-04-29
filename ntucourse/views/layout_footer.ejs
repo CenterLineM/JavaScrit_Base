@@ -1,0 +1,24 @@
+<div id="footer">
+  <h4><a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA 4.0</a> | InfoPlat<br><span style="font-size:15px;">使用者研究與策略平台發展 - <a href="https://www.facebook.com/NTUd.thinking" target="_blank"><span style="font-size:17px;">NTU d. thinking</span></a></a></span></h4>
+  <a id="aboutus" href="#aboutus" name="aboutus">關於我們</a>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	<% if(session.fbid!=null){%>
+	  ga('create', 'UA-66253228-1', {'userId':'<%=session.fbid%>'});
+	<% }else{ %>
+		ga('create', 'UA-66253228-1', 'auto');
+	<% }%>
+
+  ga('require', 'displayfeatures');
+	ga('send', 'pageview');
+
+	setTimeout(function() {
+   ga('send', 'event', 'adjusted bounce rate', 'page visit 30 seconds or more')
+  }, 30000);
+
+</script>
