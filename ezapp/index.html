@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link href="http://jqmdesigner.appspot.com/gk/lib/jquery.mobile/1.4.5/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>
+    $(document).on("mobileinit", function () {
+      $.mobile.autoInitializePage = false;
+      $.mobile.hashListeningEnabled = false;
+    });
+
+    function mobileInitPage() {
+      $.mobile.hashListeningEnabled = true;
+      $.mobile.initializePage();
+    };
+  </script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <!-- Uncomment the following to include cordova in your android project -->
+  <!--<script src="http://jqmdesigner.appspot.com/platforms/android/cordova.js"></script>-->
+  <!-- GK Loader use RequireJS to load module -->
+  <script src="http://requirejs.org/docs/release/2.1.11/minified/require.js"></script>
+  <!--Plug in GK-->
+  <script src="http://jqmdesigner.appspot.com/components/jquery.gk/jquery.gk.min.js"></script>
+  <!-- Load GK components -->
+  <script components="http://jqmdesigner.appspot.com/components/gk-ext/gk-text.html" callback="mobileInitPage" src="http://jqmdesigner.appspot.com/components/gk-loader/gk-loader.js"></script>
+  <title>EZo App</title>
+</head>
+
+<body gk-app>
+  <!-- Page: home  -->
+  <div id="home" data-role="page">
+    <div data-role="header" data-position="fixed" style="background:#246; ">
+      <div class="ui-grid-b" style="height:60px">
+        <div class="ui-block-a" style="height:100%; width:20px;"></div>
+        <div class="ui-block-b" style="height:100%; width:280px; padding-top:5px;">
+          <input data-type="search" name id="gk-2209ERM" placeholder="Search App World..." style="margin-top:-5px;">
+        </div>
+        <div class="ui-block-c" style="height:100%; width:20px;"></div>
+      </div>
+    </div>
+    <div role="main" class="ui-content">
+      <div class="ui-grid-solo" style="height:150px; width:320px; margin:-18px">
+        <div class="ui-block-a" style="height:100%">
+          <img src="http://www.sakrobotix.com/images/training/iot.jpg" style="margin-top:-20px; margin-left:-5px; width:100%; height:180px;">
+          <h3 is="gk-text" style="position:absolute; z-index:10; top:60px; left:210px; font-family:微軟正黑體; letter-spacing:-2px;">IOT總部</h3>
+        </div>
+      </div>
+      <div class="ui-grid-b" style="height:95px; margin-top:30px;">
+        <div class="ui-block-a" style="height:100%">
+          <img is="dragable" src="https://lh4.googleusercontent.com/-ufVkmUQKiYI/Uw2Sy4tbA1I/AAAAAAAA3QE/KDW94uR3iUI/s000/home.png" style="width:50px; margin:10px 0 0 23px;">
+          <h5 is="gk-text" style="text-align:center; margin-top:-5px;">主頁</h5>
+        </div>
+        <div class="ui-block-b" style="height:100%">
+          <img is="dragable" src="https://lh5.googleusercontent.com/-XUH88226iyQ/Uw2SzuGBe4I/AAAAAAAA3Qc/yXM8XwzmZBo/s800/shopping_basket.png" style="width:45px; margin:10px 0 7px 24px;">
+          <h5 is="gk-text" style="text-align:center; margin-top:-7px;">產品</h5>
+        </div>
+        <div class="ui-block-c" style="height:100%">
+          <img is="dragable" src="https://lh4.googleusercontent.com/-DEqNr84NWEA/Uw2Szfsx7cI/AAAAAAAA3QQ/qImq9Z_9DcI/s800/lightbulb.png" style="width:40px; margin:15px 0 10px 27px;">
+          <h5 is="gk-text" style="text-align:center; margin-top:-10px;">概念</h5>
+        </div>
+      </div>
+      <div class="ui-grid-b" style="height:95px">
+        <div class="ui-block-a" style="height:100%">
+          <img is="dragable" src="https://lh4.googleusercontent.com/-slM6r5qeqrI/Uw2Syy7HP5I/AAAAAAAA3QA/XBFtVyo8V0A/s800/burn_dvd2.png" style="width:45px; margin:15px 0 10px 24px;">
+          <h5 is="gk-text" style="text-align:center; margin-top:-10px;">關於</h5>
+        </div>
+        <div class="ui-block-b" style="height:100%">
+          <img is="dragable" src="https://lh6.googleusercontent.com/-aldZ-mbBUAI/Uw2Szt6ey1I/AAAAAAAA3QY/ZTwEBg7mruQ/s800/location%2520%25281%2529.png" style="width:50px; margin:10px 0 10px 24px;">
+          <h5 is="gk-text" style="text-align:center; margin-top:-10px;">地圖</h5>
+        </div>
+        <div class="ui-block-c" style="height:100%">
+          <img is="dragable" src="https://lh6.googleusercontent.com/-8AK-6SzFkVc/Uw2Sypfu2mI/AAAAAAAA3P8/Up9Kv8NYVrM/s800/diary.png" style="width:45px; margin:15px 0 10px 24px;">
+          <h5 is="gk-text" style="text-align:center; margin-top:-10px;">服務台</h5>
+        </div>
+      </div>
+    </div>
+    <div data-role="footer" data-position="fixed" style="background:#b22; color:#fff;text-shadow:none;">
+      <h3>Info</h3>
+    </div>
+  </div>
+  <!-- Page: NewPage  -->
+  <div id="NewPage" data-role="page">
+    <div class="ui-content"></div>
+  </div>
+</body>
+
+</html>
