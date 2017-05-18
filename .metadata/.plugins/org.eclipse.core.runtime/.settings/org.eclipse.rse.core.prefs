@@ -1,3 +1,4 @@
 activeuserprofiles=DellLaptop;Team
 eclipse.preferences.version=1
 org.eclipse.rse.systemtype.local.systemType.defaultUserId=Jacker
+useridperkey=DellLaptop.Local\=Jacker;
