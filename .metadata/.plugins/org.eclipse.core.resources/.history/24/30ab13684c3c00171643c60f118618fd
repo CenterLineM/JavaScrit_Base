@@ -1,0 +1,5 @@
+/**
+ * http://usejsdoc.org/
+ */
+
+var util = require('util');

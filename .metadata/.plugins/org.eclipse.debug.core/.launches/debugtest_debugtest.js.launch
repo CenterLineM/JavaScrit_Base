@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.wst.jsdt.js.node.NodeLaunchConfigurationType">
+<booleanAttribute key="attr_add_network_console_field" value="false"/>
+<stringAttribute key="attr_app_arguments" value=""/>
 <stringAttribute key="attr_app_path" value="${workspace_loc:/debugtest/debugtest.js}"/>
 <stringAttribute key="attr_app_project" value="debugtest"/>
 <stringAttribute key="attr_app_project_relative_path" value="debugtest.js"/>
+<booleanAttribute key="attr_break_field" value="true"/>
+<stringAttribute key="attr_host_field" value="localhost"/>
+<stringAttribute key="attr_node_arguments" value=""/>
+<stringAttribute key="attr_port_field" value="5858"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
 <listEntry value="/debugtest"/>
 </listAttribute>
