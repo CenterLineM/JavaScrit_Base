@@ -4320,3 +4320,525 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-05-23 11:58:24.808
 !MESSAGE No repository found at http://chromedevtools.googlecode.com/svn/update/dev/.
+!SESSION 2017-05-24 17:01:06.222 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_TW
+Framework arguments:  -product org.eclipse.epp.package.javascript.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.javascript.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-05-24 17:01:31.024
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Jacker'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-05-24 17:26:48.637
+!MESSAGE No repository found at http://chromedevtools.googlecode.com/svn/update/dev/.
+
+!ENTRY org.eclipse.debug.ui 4 120 2017-05-24 19:21:42.879
+!MESSAGE org.eclipse.debug.ui.toggleBreakpointsTargetFactory extension failed to load breakpoint toggle target because the specified id is already registered.  Specified ID is: org.chromium.debug.ui.ChromiumToggleBreakpointTargetFactory
+!SESSION 2017-05-26 12:07:03.431 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_TW
+Framework arguments:  -product org.eclipse.epp.package.javascript.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.javascript.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-05-26 12:07:27.287
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Jacker'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.debug.ui 4 120 2017-05-26 12:07:55.195
+!MESSAGE org.eclipse.debug.ui.toggleBreakpointsTargetFactory extension failed to load breakpoint toggle target because the specified id is already registered.  Specified ID is: org.chromium.debug.ui.ChromiumToggleBreakpointTargetFactory
+
+!ENTRY tern.eclipse.ide.core 4 0 2017-05-26 12:08:18.772
+!MESSAGE Error while tern repository synchronization
+!STACK 0
+java.lang.NullPointerException
+	at tern.eclipse.ide.internal.core.TernRepositoryManager.connectProject(TernRepositoryManager.java:355)
+	at tern.eclipse.ide.internal.core.TernRepositoryManager.visit(TernRepositoryManager.java:383)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at tern.eclipse.ide.internal.core.TernRepositoryManager.resourceChanged(TernRepositoryManager.java:344)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:374)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1469)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1078)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1087)
+	at org.chromium.debug.core.util.ChromiumDebugPluginUtil.createEmptyProject(ChromiumDebugPluginUtil.java:141)
+	at org.nodeclipse.debug.model.VProjectWorkspaceBridge.<init>(VProjectWorkspaceBridge.java:115)
+	at org.nodeclipse.debug.model.VProjectWorkspaceBridge$FactoryImpl.attachedToVm(VProjectWorkspaceBridge.java:70)
+	at org.chromium.debug.core.model.ConnectedTargetData.initWorkspaceRelations(ConnectedTargetData.java:223)
+	at org.chromium.debug.core.model.ConnectedTargetData.setVmEmbedder(ConnectedTargetData.java:86)
+	at org.chromium.debug.core.model.DebugTargetImpl.attach(DebugTargetImpl.java:84)
+	at org.nodeclipse.debug.launch.StandaloneV8LaunchTypeWrapper.launch(StandaloneV8LaunchTypeWrapper.java:87)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 2 2 2017-05-26 12:08:25.905
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2017-05-26 12:08:25.906
+!MESSAGE The project description file (.project) for 'STANDALONE_V8' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.chromium.debug.core 1 0 2017-05-26 12:08:25.936
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at org.chromium.sdk.internal.transport.LineReader.readLine(LineReader.java:88)
+	at org.chromium.sdk.internal.transport.Message.fromBufferedReader(Message.java:134)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:166)
+
+!ENTRY org.chromium.debug.core 4 0 2017-05-26 12:08:26.099
+!MESSAGE SDK:org.chromium.sdk.internal.BaseCommandProcessor: Failed to dispatch response to callback
+!STACK 0
+java.lang.RuntimeException: Failed to add script <F:\shareFrome\WebDev\node_modules\express\lib\request.js : 134>
+	at org.nodeclipse.debug.model.ResourceManager.addScript(ResourceManager.java:53)
+	at org.nodeclipse.debug.model.VProjectWorkspaceBridge.scriptLoaded(VProjectWorkspaceBridge.java:152)
+	at org.chromium.debug.core.model.ConnectedTargetData$DebugEventListenerImpl.scriptLoaded(ConnectedTargetData.java:323)
+	at org.chromium.sdk.internal.v8native.processor.AfterCompileProcessor$1.success(AfterCompileProcessor.java:62)
+	at org.chromium.sdk.internal.v8native.V8CommandCallbackBase.messageReceived(V8CommandCallbackBase.java:25)
+	at org.chromium.sdk.internal.v8native.V8CommandCallbackBase.messageReceived(V8CommandCallbackBase.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor$3.call(BaseCommandProcessor.java:100)
+	at org.chromium.sdk.internal.BaseCommandProcessor$3.call(BaseCommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.callThemBack(BaseCommandProcessor.java:134)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processIncoming(BaseCommandProcessor.java:104)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.processIncomingJson(V8CommandProcessor.java:113)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$4.messageReceived(StandaloneVmImpl.java:115)
+	at org.chromium.sdk.internal.transport.SocketConnection$RegularMessageItem.report(SocketConnection.java:120)
+	at org.chromium.sdk.internal.transport.SocketConnection$ResponseDispatcherThread.run(SocketConnection.java:209)
+Caused by: java.lang.RuntimeException: org.eclipse.core.internal.resources.ResourceException: Resource '/STANDALONE_V8' does not exist.
+	at org.chromium.debug.core.util.ChromiumDebugPluginUtil$5.tryCreate(ChromiumDebugPluginUtil.java:277)
+	at org.chromium.debug.core.util.ChromiumDebugPluginUtil$5.tryCreate(ChromiumDebugPluginUtil.java:1)
+	at org.chromium.debug.core.util.UniqueKeyGenerator.createUniqueKey(UniqueKeyGenerator.java:22)
+	at org.chromium.debug.core.util.ChromiumDebugPluginUtil.createFile(ChromiumDebugPluginUtil.java:284)
+	at org.chromium.debug.core.util.ChromiumDebugPluginUtil.createFile(ChromiumDebugPluginUtil.java:234)
+	at org.chromium.debug.core.model.ResourceManager.createAndRegisterResourceFile(ResourceManager.java:126)
+	at org.nodeclipse.debug.model.ResourceManager.addScript(ResourceManager.java:41)
+	... 13 more
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource '/STANDALONE_V8' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:335)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:209)
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:141)
+	at org.eclipse.core.internal.resources.File.create(File.java:110)
+	at org.eclipse.core.internal.resources.File.create(File.java:181)
+	at org.chromium.debug.core.util.ChromiumDebugPluginUtil$5.tryCreate(ChromiumDebugPluginUtil.java:267)
+	... 19 more
+
+!ENTRY org.chromium.debug.core 4 0 2017-05-26 12:08:26.109
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Exception in message listener
+!STACK 0
+java.lang.IllegalStateException: Connection not attached
+	at org.chromium.sdk.internal.transport.SocketConnection.checkAttached(SocketConnection.java:453)
+	at org.chromium.sdk.internal.transport.SocketConnection.send(SocketConnection.java:414)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$V8CommandOutputImpl.send(StandaloneVmImpl.java:248)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.send(V8CommandProcessor.java:131)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.send(V8CommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.send(BaseCommandProcessor.java:73)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.sendV8CommandAsync(V8CommandProcessor.java:82)
+	at org.chromium.sdk.internal.v8native.DebugSession.sendMessageAsync(DebugSession.java:98)
+	at org.chromium.sdk.internal.v8native.processor.AfterCompileProcessor.messageReceived(AfterCompileProcessor.java:41)
+	at org.chromium.sdk.internal.v8native.DefaultResponseHandler.handleResponseWithHandler(DefaultResponseHandler.java:60)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.acceptNonSeq(V8CommandProcessor.java:143)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.acceptNonSeq(V8CommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processIncoming(BaseCommandProcessor.java:110)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.processIncomingJson(V8CommandProcessor.java:113)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$4.messageReceived(StandaloneVmImpl.java:115)
+	at org.chromium.sdk.internal.transport.SocketConnection$RegularMessageItem.report(SocketConnection.java:120)
+	at org.chromium.sdk.internal.transport.SocketConnection$ResponseDispatcherThread.run(SocketConnection.java:209)
+
+!ENTRY org.chromium.debug.core 4 0 2017-05-26 12:08:26.118
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Exception in message listener
+!STACK 0
+java.lang.IllegalStateException: Connection not attached
+	at org.chromium.sdk.internal.transport.SocketConnection.checkAttached(SocketConnection.java:453)
+	at org.chromium.sdk.internal.transport.SocketConnection.send(SocketConnection.java:414)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$V8CommandOutputImpl.send(StandaloneVmImpl.java:248)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.send(V8CommandProcessor.java:131)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.send(V8CommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.send(BaseCommandProcessor.java:73)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.sendV8CommandAsync(V8CommandProcessor.java:82)
+	at org.chromium.sdk.internal.v8native.DebugSession.sendMessageAsync(DebugSession.java:98)
+	at org.chromium.sdk.internal.v8native.processor.AfterCompileProcessor.messageReceived(AfterCompileProcessor.java:41)
+	at org.chromium.sdk.internal.v8native.DefaultResponseHandler.handleResponseWithHandler(DefaultResponseHandler.java:60)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.acceptNonSeq(V8CommandProcessor.java:143)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.acceptNonSeq(V8CommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processIncoming(BaseCommandProcessor.java:110)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.processIncomingJson(V8CommandProcessor.java:113)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$4.messageReceived(StandaloneVmImpl.java:115)
+	at org.chromium.sdk.internal.transport.SocketConnection$RegularMessageItem.report(SocketConnection.java:120)
+	at org.chromium.sdk.internal.transport.SocketConnection$ResponseDispatcherThread.run(SocketConnection.java:209)
+
+!ENTRY org.chromium.debug.core 4 0 2017-05-26 12:08:26.125
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Exception in message listener
+!STACK 0
+java.lang.IllegalStateException: Connection not attached
+	at org.chromium.sdk.internal.transport.SocketConnection.checkAttached(SocketConnection.java:453)
+	at org.chromium.sdk.internal.transport.SocketConnection.send(SocketConnection.java:414)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$V8CommandOutputImpl.send(StandaloneVmImpl.java:248)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.send(V8CommandProcessor.java:131)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.send(V8CommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.send(BaseCommandProcessor.java:73)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.sendV8CommandAsync(V8CommandProcessor.java:82)
+	at org.chromium.sdk.internal.v8native.DebugSession.sendMessageAsync(DebugSession.java:98)
+	at org.chromium.sdk.internal.v8native.processor.AfterCompileProcessor.messageReceived(AfterCompileProcessor.java:41)
+	at org.chromium.sdk.internal.v8native.DefaultResponseHandler.handleResponseWithHandler(DefaultResponseHandler.java:60)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.acceptNonSeq(V8CommandProcessor.java:143)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.acceptNonSeq(V8CommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processIncoming(BaseCommandProcessor.java:110)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.processIncomingJson(V8CommandProcessor.java:113)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$4.messageReceived(StandaloneVmImpl.java:115)
+	at org.chromium.sdk.internal.transport.SocketConnection$RegularMessageItem.report(SocketConnection.java:120)
+	at org.chromium.sdk.internal.transport.SocketConnection$ResponseDispatcherThread.run(SocketConnection.java:209)
+
+!ENTRY org.chromium.debug.core 4 0 2017-05-26 12:08:26.131
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Exception in message listener
+!STACK 0
+java.lang.IllegalStateException: Connection not attached
+	at org.chromium.sdk.internal.transport.SocketConnection.checkAttached(SocketConnection.java:453)
+	at org.chromium.sdk.internal.transport.SocketConnection.send(SocketConnection.java:414)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$V8CommandOutputImpl.send(StandaloneVmImpl.java:248)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.send(V8CommandProcessor.java:131)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.send(V8CommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.send(BaseCommandProcessor.java:73)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.sendV8CommandAsync(V8CommandProcessor.java:82)
+	at org.chromium.sdk.internal.v8native.DebugSession.sendMessageAsync(DebugSession.java:98)
+	at org.chromium.sdk.internal.v8native.processor.AfterCompileProcessor.messageReceived(AfterCompileProcessor.java:41)
+	at org.chromium.sdk.internal.v8native.DefaultResponseHandler.handleResponseWithHandler(DefaultResponseHandler.java:60)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.acceptNonSeq(V8CommandProcessor.java:143)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.acceptNonSeq(V8CommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processIncoming(BaseCommandProcessor.java:110)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.processIncomingJson(V8CommandProcessor.java:113)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$4.messageReceived(StandaloneVmImpl.java:115)
+	at org.chromium.sdk.internal.transport.SocketConnection$RegularMessageItem.report(SocketConnection.java:120)
+	at org.chromium.sdk.internal.transport.SocketConnection$ResponseDispatcherThread.run(SocketConnection.java:209)
+
+!ENTRY org.chromium.debug.core 4 0 2017-05-26 12:08:26.138
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Exception in message listener
+!STACK 0
+java.lang.IllegalStateException: Connection not attached
+	at org.chromium.sdk.internal.transport.SocketConnection.checkAttached(SocketConnection.java:453)
+	at org.chromium.sdk.internal.transport.SocketConnection.send(SocketConnection.java:414)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$V8CommandOutputImpl.send(StandaloneVmImpl.java:248)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.send(V8CommandProcessor.java:131)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.send(V8CommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.send(BaseCommandProcessor.java:73)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.sendV8CommandAsync(V8CommandProcessor.java:82)
+	at org.chromium.sdk.internal.v8native.DebugSession.sendMessageAsync(DebugSession.java:98)
+	at org.chromium.sdk.internal.v8native.processor.AfterCompileProcessor.messageReceived(AfterCompileProcessor.java:41)
+	at org.chromium.sdk.internal.v8native.DefaultResponseHandler.handleResponseWithHandler(DefaultResponseHandler.java:60)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.acceptNonSeq(V8CommandProcessor.java:143)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.acceptNonSeq(V8CommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processIncoming(BaseCommandProcessor.java:110)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.processIncomingJson(V8CommandProcessor.java:113)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$4.messageReceived(StandaloneVmImpl.java:115)
+	at org.chromium.sdk.internal.transport.SocketConnection$RegularMessageItem.report(SocketConnection.java:120)
+	at org.chromium.sdk.internal.transport.SocketConnection$ResponseDispatcherThread.run(SocketConnection.java:209)
+
+!ENTRY org.chromium.debug.core 4 0 2017-05-26 12:08:26.142
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Exception in message listener
+!STACK 0
+java.lang.IllegalStateException: Connection not attached
+	at org.chromium.sdk.internal.transport.SocketConnection.checkAttached(SocketConnection.java:453)
+	at org.chromium.sdk.internal.transport.SocketConnection.send(SocketConnection.java:414)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$V8CommandOutputImpl.send(StandaloneVmImpl.java:248)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.send(V8CommandProcessor.java:131)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.send(V8CommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.send(BaseCommandProcessor.java:73)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.sendV8CommandAsync(V8CommandProcessor.java:82)
+	at org.chromium.sdk.internal.v8native.DebugSession.sendMessageAsync(DebugSession.java:98)
+	at org.chromium.sdk.internal.v8native.processor.AfterCompileProcessor.messageReceived(AfterCompileProcessor.java:41)
+	at org.chromium.sdk.internal.v8native.DefaultResponseHandler.handleResponseWithHandler(DefaultResponseHandler.java:60)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.acceptNonSeq(V8CommandProcessor.java:143)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.acceptNonSeq(V8CommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processIncoming(BaseCommandProcessor.java:110)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.processIncomingJson(V8CommandProcessor.java:113)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$4.messageReceived(StandaloneVmImpl.java:115)
+	at org.chromium.sdk.internal.transport.SocketConnection$RegularMessageItem.report(SocketConnection.java:120)
+	at org.chromium.sdk.internal.transport.SocketConnection$ResponseDispatcherThread.run(SocketConnection.java:209)
+
+!ENTRY org.chromium.debug.core 4 0 2017-05-26 12:08:26.148
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Exception in message listener
+!STACK 0
+java.lang.IllegalStateException: Connection not attached
+	at org.chromium.sdk.internal.transport.SocketConnection.checkAttached(SocketConnection.java:453)
+	at org.chromium.sdk.internal.transport.SocketConnection.send(SocketConnection.java:414)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$V8CommandOutputImpl.send(StandaloneVmImpl.java:248)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.send(V8CommandProcessor.java:131)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.send(V8CommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.send(BaseCommandProcessor.java:73)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.sendV8CommandAsync(V8CommandProcessor.java:82)
+	at org.chromium.sdk.internal.v8native.DebugSession.sendMessageAsync(DebugSession.java:98)
+	at org.chromium.sdk.internal.v8native.processor.AfterCompileProcessor.messageReceived(AfterCompileProcessor.java:41)
+	at org.chromium.sdk.internal.v8native.DefaultResponseHandler.handleResponseWithHandler(DefaultResponseHandler.java:60)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.acceptNonSeq(V8CommandProcessor.java:143)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.acceptNonSeq(V8CommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processIncoming(BaseCommandProcessor.java:110)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.processIncomingJson(V8CommandProcessor.java:113)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$4.messageReceived(StandaloneVmImpl.java:115)
+	at org.chromium.sdk.internal.transport.SocketConnection$RegularMessageItem.report(SocketConnection.java:120)
+	at org.chromium.sdk.internal.transport.SocketConnection$ResponseDispatcherThread.run(SocketConnection.java:209)
+
+!ENTRY org.chromium.debug.core 4 0 2017-05-26 12:08:26.154
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Exception in message listener
+!STACK 0
+java.lang.IllegalStateException: Connection not attached
+	at org.chromium.sdk.internal.transport.SocketConnection.checkAttached(SocketConnection.java:453)
+	at org.chromium.sdk.internal.transport.SocketConnection.send(SocketConnection.java:414)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$V8CommandOutputImpl.send(StandaloneVmImpl.java:248)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.send(V8CommandProcessor.java:131)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.send(V8CommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.send(BaseCommandProcessor.java:73)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.sendV8CommandAsync(V8CommandProcessor.java:82)
+	at org.chromium.sdk.internal.v8native.DebugSession.sendMessageAsync(DebugSession.java:98)
+	at org.chromium.sdk.internal.v8native.processor.AfterCompileProcessor.messageReceived(AfterCompileProcessor.java:41)
+	at org.chromium.sdk.internal.v8native.DefaultResponseHandler.handleResponseWithHandler(DefaultResponseHandler.java:60)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.acceptNonSeq(V8CommandProcessor.java:143)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.acceptNonSeq(V8CommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processIncoming(BaseCommandProcessor.java:110)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.processIncomingJson(V8CommandProcessor.java:113)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$4.messageReceived(StandaloneVmImpl.java:115)
+	at org.chromium.sdk.internal.transport.SocketConnection$RegularMessageItem.report(SocketConnection.java:120)
+	at org.chromium.sdk.internal.transport.SocketConnection$ResponseDispatcherThread.run(SocketConnection.java:209)
+
+!ENTRY org.chromium.debug.core 4 0 2017-05-26 12:08:26.159
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Exception in message listener
+!STACK 0
+java.lang.IllegalStateException: Connection not attached
+	at org.chromium.sdk.internal.transport.SocketConnection.checkAttached(SocketConnection.java:453)
+	at org.chromium.sdk.internal.transport.SocketConnection.send(SocketConnection.java:414)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$V8CommandOutputImpl.send(StandaloneVmImpl.java:248)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.send(V8CommandProcessor.java:131)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.send(V8CommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.send(BaseCommandProcessor.java:73)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.sendV8CommandAsync(V8CommandProcessor.java:82)
+	at org.chromium.sdk.internal.v8native.DebugSession.sendMessageAsync(DebugSession.java:98)
+	at org.chromium.sdk.internal.v8native.processor.AfterCompileProcessor.messageReceived(AfterCompileProcessor.java:41)
+	at org.chromium.sdk.internal.v8native.DefaultResponseHandler.handleResponseWithHandler(DefaultResponseHandler.java:60)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.acceptNonSeq(V8CommandProcessor.java:143)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.acceptNonSeq(V8CommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processIncoming(BaseCommandProcessor.java:110)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.processIncomingJson(V8CommandProcessor.java:113)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$4.messageReceived(StandaloneVmImpl.java:115)
+	at org.chromium.sdk.internal.transport.SocketConnection$RegularMessageItem.report(SocketConnection.java:120)
+	at org.chromium.sdk.internal.transport.SocketConnection$ResponseDispatcherThread.run(SocketConnection.java:209)
+
+!ENTRY org.chromium.debug.core 4 0 2017-05-26 12:08:26.164
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Exception in message listener
+!STACK 0
+java.lang.IllegalStateException: Connection not attached
+	at org.chromium.sdk.internal.transport.SocketConnection.checkAttached(SocketConnection.java:453)
+	at org.chromium.sdk.internal.transport.SocketConnection.send(SocketConnection.java:414)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$V8CommandOutputImpl.send(StandaloneVmImpl.java:248)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.send(V8CommandProcessor.java:131)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.send(V8CommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.send(BaseCommandProcessor.java:73)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.sendV8CommandAsync(V8CommandProcessor.java:82)
+	at org.chromium.sdk.internal.v8native.DebugSession.sendMessageAsync(DebugSession.java:98)
+	at org.chromium.sdk.internal.v8native.processor.AfterCompileProcessor.messageReceived(AfterCompileProcessor.java:41)
+	at org.chromium.sdk.internal.v8native.DefaultResponseHandler.handleResponseWithHandler(DefaultResponseHandler.java:60)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.acceptNonSeq(V8CommandProcessor.java:143)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.acceptNonSeq(V8CommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processIncoming(BaseCommandProcessor.java:110)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.processIncomingJson(V8CommandProcessor.java:113)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$4.messageReceived(StandaloneVmImpl.java:115)
+	at org.chromium.sdk.internal.transport.SocketConnection$RegularMessageItem.report(SocketConnection.java:120)
+	at org.chromium.sdk.internal.transport.SocketConnection$ResponseDispatcherThread.run(SocketConnection.java:209)
+
+!ENTRY org.chromium.debug.core 4 0 2017-05-26 12:08:26.169
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Exception in message listener
+!STACK 0
+java.lang.IllegalStateException: Connection not attached
+	at org.chromium.sdk.internal.transport.SocketConnection.checkAttached(SocketConnection.java:453)
+	at org.chromium.sdk.internal.transport.SocketConnection.send(SocketConnection.java:414)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$V8CommandOutputImpl.send(StandaloneVmImpl.java:248)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.send(V8CommandProcessor.java:131)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.send(V8CommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.send(BaseCommandProcessor.java:73)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.sendV8CommandAsync(V8CommandProcessor.java:82)
+	at org.chromium.sdk.internal.v8native.DebugSession.sendMessageAsync(DebugSession.java:98)
+	at org.chromium.sdk.internal.v8native.processor.AfterCompileProcessor.messageReceived(AfterCompileProcessor.java:41)
+	at org.chromium.sdk.internal.v8native.DefaultResponseHandler.handleResponseWithHandler(DefaultResponseHandler.java:60)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.acceptNonSeq(V8CommandProcessor.java:143)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.acceptNonSeq(V8CommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processIncoming(BaseCommandProcessor.java:110)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.processIncomingJson(V8CommandProcessor.java:113)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$4.messageReceived(StandaloneVmImpl.java:115)
+	at org.chromium.sdk.internal.transport.SocketConnection$RegularMessageItem.report(SocketConnection.java:120)
+	at org.chromium.sdk.internal.transport.SocketConnection$ResponseDispatcherThread.run(SocketConnection.java:209)
+
+!ENTRY org.chromium.debug.core 4 0 2017-05-26 12:08:26.175
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Exception in message listener
+!STACK 0
+java.lang.IllegalStateException: Connection not attached
+	at org.chromium.sdk.internal.transport.SocketConnection.checkAttached(SocketConnection.java:453)
+	at org.chromium.sdk.internal.transport.SocketConnection.send(SocketConnection.java:414)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$V8CommandOutputImpl.send(StandaloneVmImpl.java:248)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.send(V8CommandProcessor.java:131)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.send(V8CommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.send(BaseCommandProcessor.java:73)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.sendV8CommandAsync(V8CommandProcessor.java:82)
+	at org.chromium.sdk.internal.v8native.DebugSession.sendMessageAsync(DebugSession.java:98)
+	at org.chromium.sdk.internal.v8native.processor.AfterCompileProcessor.messageReceived(AfterCompileProcessor.java:41)
+	at org.chromium.sdk.internal.v8native.DefaultResponseHandler.handleResponseWithHandler(DefaultResponseHandler.java:60)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.acceptNonSeq(V8CommandProcessor.java:143)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.acceptNonSeq(V8CommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processIncoming(BaseCommandProcessor.java:110)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.processIncomingJson(V8CommandProcessor.java:113)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$4.messageReceived(StandaloneVmImpl.java:115)
+	at org.chromium.sdk.internal.transport.SocketConnection$RegularMessageItem.report(SocketConnection.java:120)
+	at org.chromium.sdk.internal.transport.SocketConnection$ResponseDispatcherThread.run(SocketConnection.java:209)
+
+!ENTRY org.chromium.debug.core 4 0 2017-05-26 12:08:26.180
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Exception in message listener
+!STACK 0
+java.lang.IllegalStateException: Connection not attached
+	at org.chromium.sdk.internal.transport.SocketConnection.checkAttached(SocketConnection.java:453)
+	at org.chromium.sdk.internal.transport.SocketConnection.send(SocketConnection.java:414)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$V8CommandOutputImpl.send(StandaloneVmImpl.java:248)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.send(V8CommandProcessor.java:131)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.send(V8CommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.send(BaseCommandProcessor.java:73)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.sendV8CommandAsync(V8CommandProcessor.java:82)
+	at org.chromium.sdk.internal.v8native.DebugSession.sendMessageAsync(DebugSession.java:98)
+	at org.chromium.sdk.internal.v8native.processor.AfterCompileProcessor.messageReceived(AfterCompileProcessor.java:41)
+	at org.chromium.sdk.internal.v8native.DefaultResponseHandler.handleResponseWithHandler(DefaultResponseHandler.java:60)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.acceptNonSeq(V8CommandProcessor.java:143)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.acceptNonSeq(V8CommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processIncoming(BaseCommandProcessor.java:110)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.processIncomingJson(V8CommandProcessor.java:113)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$4.messageReceived(StandaloneVmImpl.java:115)
+	at org.chromium.sdk.internal.transport.SocketConnection$RegularMessageItem.report(SocketConnection.java:120)
+	at org.chromium.sdk.internal.transport.SocketConnection$ResponseDispatcherThread.run(SocketConnection.java:209)
+
+!ENTRY org.chromium.debug.core 4 0 2017-05-26 12:08:26.185
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Exception in message listener
+!STACK 0
+java.lang.IllegalStateException: Connection not attached
+	at org.chromium.sdk.internal.transport.SocketConnection.checkAttached(SocketConnection.java:453)
+	at org.chromium.sdk.internal.transport.SocketConnection.send(SocketConnection.java:414)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$V8CommandOutputImpl.send(StandaloneVmImpl.java:248)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.send(V8CommandProcessor.java:131)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.send(V8CommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.send(BaseCommandProcessor.java:73)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.sendV8CommandAsync(V8CommandProcessor.java:82)
+	at org.chromium.sdk.internal.v8native.DebugSession.sendMessageAsync(DebugSession.java:98)
+	at org.chromium.sdk.internal.v8native.processor.AfterCompileProcessor.messageReceived(AfterCompileProcessor.java:41)
+	at org.chromium.sdk.internal.v8native.DefaultResponseHandler.handleResponseWithHandler(DefaultResponseHandler.java:60)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.acceptNonSeq(V8CommandProcessor.java:143)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.acceptNonSeq(V8CommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processIncoming(BaseCommandProcessor.java:110)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.processIncomingJson(V8CommandProcessor.java:113)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$4.messageReceived(StandaloneVmImpl.java:115)
+	at org.chromium.sdk.internal.transport.SocketConnection$RegularMessageItem.report(SocketConnection.java:120)
+	at org.chromium.sdk.internal.transport.SocketConnection$ResponseDispatcherThread.run(SocketConnection.java:209)
+
+!ENTRY org.chromium.debug.core 4 0 2017-05-26 12:08:26.190
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Exception in message listener
+!STACK 0
+java.lang.IllegalStateException: Connection not attached
+	at org.chromium.sdk.internal.transport.SocketConnection.checkAttached(SocketConnection.java:453)
+	at org.chromium.sdk.internal.transport.SocketConnection.send(SocketConnection.java:414)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$V8CommandOutputImpl.send(StandaloneVmImpl.java:248)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.send(V8CommandProcessor.java:131)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.send(V8CommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.send(BaseCommandProcessor.java:73)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.sendV8CommandAsync(V8CommandProcessor.java:82)
+	at org.chromium.sdk.internal.v8native.DebugSession.sendMessageAsync(DebugSession.java:98)
+	at org.chromium.sdk.internal.v8native.processor.AfterCompileProcessor.messageReceived(AfterCompileProcessor.java:41)
+	at org.chromium.sdk.internal.v8native.DefaultResponseHandler.handleResponseWithHandler(DefaultResponseHandler.java:60)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.acceptNonSeq(V8CommandProcessor.java:143)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.acceptNonSeq(V8CommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processIncoming(BaseCommandProcessor.java:110)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.processIncomingJson(V8CommandProcessor.java:113)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$4.messageReceived(StandaloneVmImpl.java:115)
+	at org.chromium.sdk.internal.transport.SocketConnection$RegularMessageItem.report(SocketConnection.java:120)
+	at org.chromium.sdk.internal.transport.SocketConnection$ResponseDispatcherThread.run(SocketConnection.java:209)
+
+!ENTRY org.chromium.debug.core 4 0 2017-05-26 12:08:26.195
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Exception in message listener
+!STACK 0
+java.lang.IllegalStateException: Connection not attached
+	at org.chromium.sdk.internal.transport.SocketConnection.checkAttached(SocketConnection.java:453)
+	at org.chromium.sdk.internal.transport.SocketConnection.send(SocketConnection.java:414)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$V8CommandOutputImpl.send(StandaloneVmImpl.java:248)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.send(V8CommandProcessor.java:131)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.send(V8CommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.send(BaseCommandProcessor.java:73)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.sendV8CommandAsync(V8CommandProcessor.java:82)
+	at org.chromium.sdk.internal.v8native.DebugSession.sendMessageAsync(DebugSession.java:98)
+	at org.chromium.sdk.internal.v8native.processor.AfterCompileProcessor.messageReceived(AfterCompileProcessor.java:41)
+	at org.chromium.sdk.internal.v8native.DefaultResponseHandler.handleResponseWithHandler(DefaultResponseHandler.java:60)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.acceptNonSeq(V8CommandProcessor.java:143)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor$HandlerImpl.acceptNonSeq(V8CommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processIncoming(BaseCommandProcessor.java:110)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.processIncomingJson(V8CommandProcessor.java:113)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$4.messageReceived(StandaloneVmImpl.java:115)
+	at org.chromium.sdk.internal.transport.SocketConnection$RegularMessageItem.report(SocketConnection.java:120)
+	at org.chromium.sdk.internal.transport.SocketConnection$ResponseDispatcherThread.run(SocketConnection.java:209)
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2017-05-26 12:12:24.811
+!MESSAGE Unexpected interrupt while waiting on ECF browse request
+!STACK 0
+java.lang.InterruptedException
+	at org.eclipse.core.internal.jobs.Semaphore.acquire(Semaphore.java:29)
+	at org.eclipse.core.internal.jobs.JobManager.join(JobManager.java:909)
+	at org.eclipse.core.internal.jobs.InternalJob.join(InternalJob.java:341)
+	at org.eclipse.core.runtime.jobs.Job.join(Job.java:524)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.waitOnSelf(FileInfoReader.java:76)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getRemoteFiles(FileInfoReader.java:112)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getRemoteFile(FileInfoReader.java:127)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getLastModified(FileInfoReader.java:132)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.getLastModified(RepositoryTransport.java:229)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.delegateGetLastModified(CachingTransport.java:390)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.getLastModified(CachingTransport.java:345)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCacheFromFile(CacheManager.java:104)
+	at org.eclipse.equinox.internal.p2.metadata.repository.XZedSimpleMetadataRepositoryFactory.getLocalFile(XZedSimpleMetadataRepositoryFactory.java:56)
+	at org.eclipse.equinox.internal.p2.metadata.repository.XZedSimpleMetadataRepositoryFactory.load(XZedSimpleMetadataRepositoryFactory.java:78)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor54.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:396)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:199)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:463)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor54.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:396)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:199)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:463)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog$13.run(MarketplaceCatalog.java:279)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
