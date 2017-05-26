@@ -2,12 +2,20 @@
  * 
  */
 
-var express = require('express');
-var app = express.createServe();
+const express = require('express');
+const http = require('http');
 
-app.use(express.bodyParser());
-app.all('/', function(req, res) {
-	res.send(req.body.title + req.body.text);
+const app = express();
+app.get('/', function (req, res) {
+  res.send('hi');
 });
 
-app.listen(3000);
+const server = http.createServer(app).listen(8080, function(err) {
+  if (err) {
+    console.log(err);
+  } else {
+    const host = server.address().address;
+    const port = server.address().port;
+    console.log(`Server listening on ${host}:${port}`);
+  }
+});
