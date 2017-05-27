@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;microblog/views/llist.ejs&apos; to &apos;llist&apos;" description="Rename resource &apos;llist.ejs&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="views/llist.ejs" name="llist" stamp="1495860041845" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;microblog/views/llist&apos; to &apos;llist.ejs&apos;" description="Rename resource &apos;llist&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="views/llist" name="llist.ejs" stamp="1495860097495" updateReferences="true"/>
+</session>
