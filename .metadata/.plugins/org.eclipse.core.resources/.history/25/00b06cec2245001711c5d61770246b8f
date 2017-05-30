@@ -1,0 +1,98 @@
+var express = require('express');
+var router = express.Router();
+
+/* GET home page. */
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'Express' });
+});
+
+
+
+// 增加對應函數
+
+router.get('/u', function(req, res, next) {
+	res.send('respond with a resource');
+});
+
+//檢查使用者登入狀態
+var isLogin = false;
+var checkLoginStatus = function(req, res, next){
+	isLogin = false;
+	if(req.singedCookies.userid && req.singedCookies.password){
+		isLogin = true;
+	}
+};
+
+// 已登入使用這 首頁 顯示
+router.get('/index', function(req, res, next) {
+	  checkLoginStatus(req, res);
+	  res.render( 'index',{
+		  title : '歡迎來到 Microblog',
+		  loginStatus : isLogin,
+		  posts : postList
+	  })
+	});
+
+
+
+
+// 註冊使用者
+router.get('/reg', function(req, res, next) { 
+	checkLoginStatus(req, res);
+	res.render( 'reg', {
+		title : '註冊',
+		loginStatus : isLogin
+	});
+});
+
+// 註冊 行為
+router.get('/doReg', function(req, res, next) {
+	res.send('respond with a resource');
+});
+
+
+
+// 登入實作
+router.get('/login', function(req, res, next) { 
+	
+});
+
+
+
+
+// 下面的要改寫
+
+
+module.exports.user = function(req, res) {
+	
+};
+
+module.exports.post = function(req, res) {
+	
+};
+
+module.exports.reg = function(req, res) {
+	
+};
+
+module.exports.doReg = function(req, res) {
+	
+};
+
+
+module.exports.login = function(req, res) {
+	
+};
+
+
+
+module.exports.doLogin = function(req, res) {
+	
+};
+
+
+module.exports.logout = function(req, res) {
+	
+};
+
+module.exports = router;

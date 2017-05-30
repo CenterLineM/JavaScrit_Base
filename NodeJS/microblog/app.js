@@ -12,33 +12,27 @@ var helper = require('./routes/helper');
 
 var app = express();
 
+//註冊路由路徑
+
+
+// 支援 layout 
+var partials = require('express-partials')
+app.use(partials())
+
 // 使用layout
 var expressLayouts = require('express-ejs-layouts');
 app.use(expressLayouts); // add this use()
 
-// 載入 MongoDB 書上就有的 不可用
-/*var MongoStore = require('connect-mongo');
-var settings = require('./settings');
-app.set('views', __dirname + '/views');
-app.set('view engine', 'ejs');
-//app.use(express.bodyParser());
-app.use(express.methodOverride());
-app.use(express.cookieParser());
-app.use(express.session({
-	secret: settings.cookieSecret,
-	store: new MongoStore({
-		db:settings.db
-	})
-}));
-app.use(app.router);
-app.use(express.static(__dirname + '/public'));
-*/
+// 載入 MongoDB 書上舊有的 不可用
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view options', { layout:'layout.ejs' });
 
-
+// 試試看可不可用 ejs
+//app.set('view engine', 'jade');
+app.set('view engine', 'ejs');
 
 // 修復
 // 錯誤: Error: Failed to lookup view "error" in views directory "F:\shareFrome\WebDev\JavaScrit_Base\NodeJS\microblog\views"
@@ -50,9 +44,7 @@ app.use(express.static(__dirname + '../public'));
 app.engine('ejs', require('ejs').renderFile);
 
 
-// 試試看可不可用 ejs
-//app.set('view engine', 'jade');
-app.set('view engine', 'ejs');
+
 
 
 
@@ -68,6 +60,18 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/users', users);
 app.use('/hello', hello);
+// 路由規則 測試
+app.get('/nswbmw', function(req, res)
+{
+	res.send('Hello.world! ');
+});
+
+
+// 註冊路由路徑
+
+// Login 登入介面
+
+
 
 // 路徑比對 新增
 
@@ -120,43 +124,12 @@ app.get('/list', function(req, res) {
 
 
 //⚠ 沒成功錯誤
-/**
-var helpers = require('express-helpers')(app);
-var util = require('util');
-
-app.helpers({
-	inspect: function(obj) {
-		return util.inspect(obj, true);
-	}
-});
-
-app.dynamicHelpers({
-	headers: function(req, res) {
-		return req.headers;
-	}
-});
-
-app.get('/helper', function(req, res) {
-	res.render('helper', {
-		title: 'Helper'
-	});
-});
-*/
 
 
 // 建立微網誌
 // 路由規畫
 // 成功修改
 app.use('/u', index);
-/*
-app.post('/post', index.post);
-app.use('/reg', index.reg);
-app.post('/reg', index.doReg);
-app.use('/login', index.login);
-app.post('/login', index.doLogin);
-app.use('/logout', index.logout);
-*/
-
 
 
 
