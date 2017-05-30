@@ -1,8 +1,0 @@
-/**
- * httpserver.js
- */
-
-
-var http = request('http');
-
-var server = new http.Server();

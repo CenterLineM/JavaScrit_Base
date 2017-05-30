@@ -1,5 +1,0 @@
-/**
- * httpServerRequestGet.js
- */
-
-var http = require('http');

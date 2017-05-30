@@ -1,7 +1,0 @@
-/**
- * httpServerRequestGet.js
- */
-
-var http = require('http');
-var url = reqire('url');
-var util = require('util');

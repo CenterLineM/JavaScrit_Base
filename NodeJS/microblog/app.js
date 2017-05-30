@@ -16,6 +16,23 @@ var app = express();
 var expressLayouts = require('express-ejs-layouts');
 app.use(expressLayouts); // add this use()
 
+// 載入 MongoDB 書上就有的 不可用
+/*var MongoStore = require('connect-mongo');
+var settings = require('./settings');
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
+//app.use(express.bodyParser());
+app.use(express.methodOverride());
+app.use(express.cookieParser());
+app.use(express.session({
+	secret: settings.cookieSecret,
+	store: new MongoStore({
+		db:settings.db
+	})
+}));
+app.use(app.router);
+app.use(express.static(__dirname + '/public'));
+*/
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

@@ -2,12 +2,14 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="app.get" key="selection"/>
+		<item value="settings" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="settings"/>
+			<item value="../settings"/>
 			<item value="app.get"/>
 			<item value="exports"/>
 			<item value="routes"/>
@@ -23,7 +25,7 @@
 		<item value="346" key="DIALOG_WIDTH"/>
 		<item value="1|Microsoft JhengHei UI|12.0|0|WINDOWS|1|-16|0|0|0|400|0|0|0|-120|3|2|1|34|Microsoft JhengHei UI" key="DIALOG_FONT_NAME"/>
 		<item value="446" key="DIALOG_HEIGHT"/>
-		<item value="1150" key="DIALOG_X_ORIGIN"/>
+		<item value="1028" key="DIALOG_X_ORIGIN"/>
 		<item value="185" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

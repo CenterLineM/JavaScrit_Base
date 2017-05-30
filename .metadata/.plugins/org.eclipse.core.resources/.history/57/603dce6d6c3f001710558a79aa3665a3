@@ -1,5 +1,0 @@
-/**
- * httpserverrequestpost.js
- */
-
-var http = require('http');

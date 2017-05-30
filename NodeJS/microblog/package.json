@@ -13,7 +13,8 @@
     "jade": "~1.11.0",
     "morgan": "~1.8.1",
     "serve-favicon": "~2.4.2",
-    "ejs": ">= 0.0.1",
-    "mongodb": ">= 0.9.9"  
+    "ejs": "~0.8.5",
+    "mongodb": "*",
+    "connect-mongo":"*" 
   }
 }
