@@ -1,3 +1,5 @@
+//JavaScript 當中的迴圈 -- for 與 while
+//by 陳鍾誠
 
 var sum = 0
 
