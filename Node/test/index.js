@@ -10,6 +10,12 @@ app.get("/mypage", function(req, res) {
     res.send(" Hi I am here.");
 });
 
+app.get("/homepage", function(req, res) {
+    res.send("OK");
+});
+
+
+
 app.listen(3000, function() {
     console.log("Server 已經啟動在 http://localhost:3000/");
 })
